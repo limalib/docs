@@ -9,8 +9,7 @@ Command
 USAGE:
 There are 3 different versions of the alias command:
 
-|``alias  -- will give you a menu for adding aliases.  some things can only``
-	  be done through the alias menu.
+|``alias  -- will give you a menu for adding aliases.  some things can only`` be done through the alias menu.
 
 |``alias str -- shows the value of alias 'str'``
 
@@ -34,16 +33,16 @@ An alias definition can change each time you use the alias:
                   you're studly Rust
        You'll say: "Hey, Rust, you're studly!"
 
-| $*  -- It's the same as $1, but it means 'everything else'.
+| $\*  -- It's the same as $1, but it means 'everything else'.
        Example:  If you alias "you're" to:
-                  say $2, you're $1!  Do you $*?       When you type:
+                  say $2, you're $1!  Do you $\*?       When you type:
                  you're studly Rust exercise much
 	You'll say: "Hey, Rust, you're studly!  Do you exercise much?"
 
-Notice $* matches any number of words, whereas $1, $2, etc...
+Notice $\* matches any number of words, whereas $1, $2, etc...
 only match one word.
 
-If you don't put a $* in your expansion, one will be automatically
+If you don't put a $\* in your expansion, one will be automatically
 added to the end of the alias for you.
 
 If you have an alias, but don't want to use it, you can prepend a \\ to
