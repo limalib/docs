@@ -13,7 +13,7 @@ configure it for your purpose.
 
 Installation
 ------------
-We recommend installation on Ubuntu, Debian or in WSL in Windows, see how to :doc:`install <Installation>`.
+Installation on Ubuntu, Debian or in WSL in Windows is recommended, see how to :doc:`install <Installation>`.
 
 Latest changes
 --------------
