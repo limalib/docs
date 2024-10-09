@@ -14,6 +14,7 @@ Mudlib
 - :doc:`armour: simple_slots <mudlib/armour-simple_slots>`
 - :doc:`blows: base <mudlib/blows-base>`
 - :doc:`body: cmd <mudlib/body-cmd>`
+- :doc:`body: naming <mudlib/body-naming>`
 - :doc:`body: pockets <mudlib/body-pockets>`
 - :doc:`body: skills <mudlib/body-skills>`
 - :doc:`clusters: base <mudlib/clusters-base>`

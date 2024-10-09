@@ -170,9 +170,30 @@ Returns a simple demo string.
 Do a frame colour demo using ``style`` using ``colour`` in width ``w``.
 
 
+.. c:function:: string menu_render()
+
+Produces a render of the current menu.
+
+
 .. c:function:: string frame_render()
 
 Renders the final frame into a string for printing.
+
+
+.. c:function:: void frame_add_column(string name, mixed *data)
+
+Adds a column with a name, and an array of strings or integers to be shown.
+This can only be renderes if all contents are columns. Use ``frame_render_columns()`` to render.
+Call ``frame_init_user()`` before adding columns. 
+Important: Frame header and frame content should
+not be called as they are calculated automatically.
+
+
+.. c:function:: string frame_render_columns()
+
+Render the columns added via ``frame_add_column()``. 
+Important: Frame header and frame content should
+not be called as they are calculated automatically.
 
 
 TODO list
