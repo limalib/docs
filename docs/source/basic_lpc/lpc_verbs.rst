@@ -3,7 +3,7 @@
 Verbs and interactions
 ######################
 
-You know understand objects, calling them, functions and variables. Now it is time to
+You now understand objects, calling them, functions and variables. Now it is time to
 look at how to create player interactions. 
 
 Verbs should generally be used instead of commands for "in character" ("IC")
