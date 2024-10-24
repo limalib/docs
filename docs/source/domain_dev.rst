@@ -33,7 +33,21 @@ direct tips on how to accomplish what you are being asked to do. Try to figure o
 first, before turning to the tip box.
 
 .. note::
+   The Pinto domain contains examples used here but are provided when you clone LIMA 
+   from Github. You will be asked to create these examples themselves during the learning paths provided
+   in the documentation, but are kept here for reference. 
 
+   If you are trying to following the learning paths, we recommend you move
+   ``/domains/pinto`` to ``/domains/pinto.bak`` and follow the tutorials. Learning happens
+   when you start creating your own code rather than just use what is provided -
+   even typing those examples again will help you understand the code, and noticing
+   and fixing those compile errors will provide valuable teachings as well.
+
+   Refer to these examples if you're stuck or things just do not work, don't just
+   copy them.
+   
+
+.. tip::
     *Armour, armor, colour, colour, categorisation, categorization?*
 
     LIMA was a mixture of US English and UK English in the 1990s, but has since then been straightened
