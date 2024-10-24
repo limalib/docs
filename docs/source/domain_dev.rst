@@ -34,18 +34,18 @@ first, before turning to the tip box.
 
 .. note::
    The Pinto domain contains examples used here but are provided when you clone LIMA 
-   from Github. You will be asked to create these examples themselves during the learning paths provided
-   in the documentation, but are kept here for reference. 
+   from Github. You will be asked to create these examples during the learning paths provided
+   here, but are kept in GitHub for reference.
 
    If you are trying to following the learning paths, we recommend you move
    ``/domains/pinto`` to ``/domains/pinto.bak`` and follow the tutorials. Learning happens
-   when you start creating your own code rather than just use what is provided -
-   even typing those examples again will help you understand the code, and noticing
-   and fixing those compile errors will provide valuable teachings as well.
+   when you start creating your own code rather than just copy from what is provided -
+   even *typing* these examples again will help you understand the code, and noticing
+   and fixing the compile errors you introduce by mistake will provide valuable teachings.
 
-   Refer to these examples if you're stuck or things just do not work, don't just
+   *TL;DR* Refer to these examples if you're stuck or things just do not work, don't just
    copy them.
-   
+
 
 .. tip::
     *Armour, armor, colour, colour, categorisation, categorization?*
