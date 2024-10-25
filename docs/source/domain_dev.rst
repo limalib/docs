@@ -37,13 +37,13 @@ first, before turning to the tip box.
    from Github. You will be asked to create these examples during the learning paths provided
    here, but are kept in GitHub for reference.
 
-   If you are trying to following the learning paths, we recommend you move
+   If you are trying to following the learning paths, we recommend that you move
    ``/domains/pinto`` to ``/domains/pinto.bak`` and follow the tutorials. Learning happens
    when you start creating your own code rather than just copy from what is provided -
    even *typing* these examples again will help you understand the code, and noticing
    and fixing the compile errors you introduce by mistake will provide valuable teachings.
 
-   *TL;DR* Refer to these examples if you're stuck or things just do not work, don't just
+   *TL;DR* Refer to these examples if you are stuck or things just do not work - don't just
    copy them.
 
 
