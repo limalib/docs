@@ -122,6 +122,11 @@ and a rank. This is default output for screen readers.
 Load /data/config/skill-tree as new skill configuration.
 
 
+.. c:function:: void dump_skills_to_file()
+
+Dump all skills to /data/config/skill-tree.
+
+
 .. c:function:: int percent_for_next_rank(object player, string skill_name)
 
 Returns the percent until the player hits the next skill rank.

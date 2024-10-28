@@ -184,14 +184,14 @@ Renders the final frame into a string for printing.
 
 Adds a column with a name, and an array of strings or integers to be shown.
 This can only be renderes if all contents are columns. Use ``frame_render_columns()`` to render.
-Call ``frame_init_user()`` before adding columns. 
+Call ``frame_init_user()`` before adding columns.
 Important: Frame header and frame content should
 not be called as they are calculated automatically.
 
 
 .. c:function:: string frame_render_columns()
 
-Render the columns added via ``frame_add_column()``. 
+Render the columns added via ``frame_add_column()``.
 Important: Frame header and frame content should
 not be called as they are calculated automatically.
 

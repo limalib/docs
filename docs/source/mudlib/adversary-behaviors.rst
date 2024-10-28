@@ -5,7 +5,7 @@ Documentation for the adversary-behaviors functions for the mudlib in */std/adve
 
 Functions
 =========
-.. c:function:: varargs int busy_with(object ob, string action, string bf, mixed args)
+.. c:function:: varargs int busy_with(object ob, string action, string bf, mixed args, int busy)
 
 int busy_with(object ob, string action, string function, mixed *args)
 Add a call back to a function and keep the player busy in the mean
