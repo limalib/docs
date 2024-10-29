@@ -6,7 +6,12 @@ Documentation for the switch verb in */cmds/verbs/switch.c*.
 Command
 =======
 
-Mainly used to switch which group a board is set to
+USAGE
+
+ |  ``switch to <board topic>``
+ |  ``switch in <something> to <state>``
+
+ Switch to a differenr board topic, switch the status to off.
 
 .. TAGS: RST
 

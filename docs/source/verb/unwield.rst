@@ -6,10 +6,12 @@ Documentation for the unwield verb in */cmds/verbs/unwield.c*.
 Command
 =======
 
-Unwield equipment that you are wielding.
+USAGE
 
- |  ``unwield sword``
+ |  ``unwield <something>``
  |  ``unwield all``
+
+Unwield equipment that you are wielding.
 
 .. TAGS: RST
 
