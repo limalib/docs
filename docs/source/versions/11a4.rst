@@ -1,7 +1,6 @@
 Version 1.1 alpha 4
 ===================
 
-
 - **Wed Sep 11 22:12:05 2024**: *Tsath*  started work on 1.1a4.
 - **Sat Sep 14 23:41:15 2024**: *Tsath*  extended CHANNEL_D with restricted channels.
 - **Sun Sep 15 10:30:15 2024**: *Tsath*  added example item using RESTRICTED channels ^std/item/radio.c. A radio transceiver type item that auto tunes into channels, and abandons them again when needed.
@@ -12,5 +11,31 @@ Version 1.1 alpha 4
 - **Wed Sep 25 16:14:53 2024**: *Tsath*  added config.h option COUNT_EXITS.
 - **Thu Sep 26 18:22:20 2024**: *Tsath*  took the default width and client height hidden deep in the mudlib and exposed them in config.h for easy config.
 - **Sat Sep 28 08:06:56 2024**: *Tsath*  improved the admtool interface for colour a bit. It still doesn't support anything but ANSI colours.
-- **Sat Sep 28 08:31:13 2024**: *Tsath*  extended number_word(num) in M_GRAMMER to also handle 0.
-
+- **Sat Sep 28 08:31:13 2024**: *Tsath*  extended number_word(num) in M_GRAMMAR to also handle 0.
+- **Sun Sep 29 07:55:21 2024**: *Tsath*  fixed grammar issue in BASE_ROOM (thanks Thurtea for reporting this one)
+- **Sun Sep 29 08:17:23 2024**: *Tsath*  stopped error messages from getting sent to players. They now get BUG_MSG.
+- **Sun Sep 29 15:22:24 2024**: *Tsath*  changed admtool d,c to support XTERM colours as well, and improved the interface.
+- **Sun Sep 29 15:47:14 2024**: *Tsath*  added 'fix' command to handle limb, stats and other updates needed to fix broken bodies.
+- **Sun Sep 29 21:00:09 2024**: *Tsath*  added 3 condition states: sitting, lying and standing.
+- **Fri Oct  4 23:10:47 2024**: *Tsath*  fixed XTERM256_D to handle old 'bold,green' combos.
+- **Fri Oct  4 23:25:59 2024**: *Asmerian*  corrected RST for alias.c
+- **Wed Oct  9 16:55:13 2024**: *Tsath*  extended M_FRAME to handle column layouts, and rewrote 'who' and 'people' to use it.
+- **Wed Oct  9 17:50:48 2024**: *Tsath*  changed 'equip' to use M_FRAME columns.
+- **Thu Oct 10 02:01:53 2024**: *Asmerian*  updated rapier to inherit from WEAPON instead of SWORD
+- **Thu Oct 10 03:01:23 2024**: *Asmerian*  built a sample Dead Boy helmet, think i screwed up the adj
+- **Thu Oct 10 04:35:00 2024**: *Asmerian*  changed all refrence to inherit SWORD to inherit WEAPON
+- **Thu Oct 10 04:36:02 2024**: *Asmerian*  deleted /std/sword.c
+- **Thu Oct 10 22:53:27 2024**: *Tsath*  removed SWORD from <mudlib.h>
+- **Fri Oct 11 04:13:31 2024**: *Asmerian*  fixed the Death's Head helms descriptions
+- **Fri Oct 11 08:21:20 2024**: *Asmerian*  adjusted the module key for quest under game configuration to a Q to prevent conflict with the q module key for quit
+- **Fri Oct 11 08:50:31 2024**: *Asmerian*  fixed the stock-priest spell to allow priest spells to be detected by the spell_d
+- **Fri Oct 11 20:50:18 2024**: *Tsath*  rewrote 'menu' to use new menu system, and fixed it to be able to do sub-menus.
+- **Sat Oct 12 05:00:53 2024**: *Asmerian*  added another skill rank at 1750 points to allow for there to be 21 skill ranks and 21 skill titles
+- **Tue Oct 22 22:31:22 2024**: *Tsath*  added another error() catch to MENU if menu has no title.
+- **Tue Oct 22 22:31:45 2024**: *Tsath*  converted annotation menu (discuss cmd) to new menu style.
+- **Wed Oct 23 21:50:26 2024**: *Tsath*  fixed 'dataedit' tool to use new menus.
+- **Fri Oct 25 23:29:36 2024**: *Tsath*  fixed bug in introduce verb and introduced more syntaxes.
+- **Sun Oct 27 11:38:51 2024**: *Tsath*  fixed superflous comma in living-default messages.
+- **Tue Oct 29 15:08:30 2024**: *Tsath*  documented all verbs.
+- **Fri Nov  1 21:24:55 2024**: *Asmerian*  fixed guild_gard by setting guild to yakitori instead of sorcery
+- **Sat Nov  2 22:12:03 2024**: *Tsath*  fixed the car not being able to drive. Bug in USE_INTRODUCTIONS.
