@@ -164,18 +164,21 @@ The wizard will get an error about not being able to write to their folder even 
 
    |  ``Permission denied: /wiz/tsath/exec.c.``
 
-The most likely cause of this is that you have ``AUTO_WIZ`` on, and you created the folder manually.
+The most likely cause is that you have ``AUTO_WIZ`` on, and you created the folder manually.
 The ``SECURE_D`` still needs to assign permissions for the wizard to the folder. The simple way
 of fixing this is to dewiz and wiz them again using the :doc:`admtool <command/admtool>`.
 
 .. note::
 
     This permissions could be added automatically when ``AUTO_WIZ`` is on as soon as the wizard
-    join the MUD. This is not a great idea, since you will likely accumulate a lot of unused security
-    rules for people that just stopped by and left, never to be seen again.
+    joins the MUD. This is not a great idea, since you will likely accumulate a lot of unused security
+    rules for people that just stopped by and left - never to be seen again.
 
     You know who is staying and gets to be a full wizards, and who is just a guest - the system
     cannot know.
+
+Configuration
+-------------
 
 What does USE_INTRODUCTIONS change in config.h?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -184,7 +187,7 @@ Enabling this option in ``config.h`` hides player names for other players in som
    2. Players saying something in rooms with other players.
    3. Players whispering to other players in rooms.
 
-So, as an example, a player whispering another player in a room will be seen by other players as:
+As an example, a player whispering another player in a room will be seen by other players as:
 
    |  A strong orc whispers something to a tall beautiful elf.
 
