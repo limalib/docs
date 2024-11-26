@@ -39,3 +39,12 @@ Version 1.1 alpha 4
 - **Tue Oct 29 15:08:30 2024**: *Tsath*  documented all verbs.
 - **Fri Nov  1 21:24:55 2024**: *Asmerian*  fixed guild_gard by setting guild to yakitori instead of sorcery
 - **Sat Nov  2 22:12:03 2024**: *Tsath*  fixed the car not being able to drive. Bug in USE_INTRODUCTIONS.
+- **Sun Nov  3 08:09:04 2024**: *Tsath*  fixed M_SMARTMOVE for vehicles.
+- **Sun Nov  3 08:09:32 2024**: *Tsath*  fixed METHOD_D with broken mapping.
+- **Sun Nov  3 08:09:51 2024**: *Tsath*  added footer back to who command.
+- **Mon Nov  4 22:08:48 2024**: *Tsath*  installed Asmerian's changes to METHOD_D.
+- **Thu Nov  7 22:20:51 2024**: *Tsath*  rewrote frame_render_columns() in M_FRAME to do output differently.
+- **Mon Nov 11 18:35:52 2024**: *Asmerian*  extended m_damage_sources to include magic_skill_used
+- **Sun Nov 17 23:26:39 2024**: *Tsath*  fixed METHOD_D so it had permission to be preloaded by /secure/master.
+- **Mon Nov 18 17:58:00 2024**: *Tsath*  added get_mud_stats() apply to /secure/master.
+- **Sun Nov 24 22:13:12 2024**: *Tsath*  fixed that you can enter a car you're already sitting inside by getting the enter_checks() to run correctly.
