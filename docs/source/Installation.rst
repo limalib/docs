@@ -29,7 +29,6 @@ Windows Subsystem for Linux (WSL)
    the icon. You might need to restart Windows after installing WSL.
 
 .. image:: images/wsl_step1b.png
-  :width: 700
   :alt: Starting the WSL
 
 4. Set a username and a password for your Linux:
