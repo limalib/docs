@@ -177,5 +177,23 @@ of fixing this is to dewiz and wiz them again using the :doc:`admtool <command/a
     You know who is staying and gets to be a full wizards, and who is just a guest - the system
     cannot know.
 
+What does USE_INTRODUCTIONS change in config.h?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Enabling this option in ``config.h`` hides player names for other players in some very specific situations:
+   1. Players passing through rooms (entering and leaving).
+   2. Players saying something in rooms with other players.
+   3. Players whispering to other players in rooms.
 
+So, as an example, a player whispering another player in a room will be seen by other players as:
 
+   |  A strong orc whispers something to a tall beautiful elf.
+
+The players can introduce themselves to each other via the ``introduce`` verb. Either to one person in the room
+or the entire room. After being introduced, they will show up normally by name.
+
+LIMA using a centralized parsing structure where all messages for receivers are created at once, and the 
+situations above allows the messages to be created for the sender, the other person involved, 
+and the rest. This system is very effective, and widely used for combat, emotes, verbs and 
+other in-room actions and is not recommended to be changed.
+
+Short version: If players want to keep their identity hidden, do not do emotes or actions.
