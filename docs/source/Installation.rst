@@ -62,12 +62,10 @@ or for Debian:
   :width: 700
   :alt: apt install
 
-6. Clone LIMA sources from github. It's available from two sources:
+6. Clone LIMA sources from github:
 
-    |   Stable: https://github.com/fluffos/lima
-    |   Development: https://github.com/tsathoqqua/lima
-    |
-    |   ``git clone https://github.com/tsathoqqua/lima.git --recurse-submodules``
+    |   ``git clone https://github.com/tsathoqqua/lima.git --recurse-submodules -b stable`` (stable)
+    |   ``git clone https://github.com/tsathoqqua/lima.git --recurse-submodules`` (development)
 
 .. image:: images/wsl_step5.png
   :width: 700
