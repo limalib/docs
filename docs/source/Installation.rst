@@ -64,8 +64,8 @@ or for Debian:
 
 6. Clone LIMA sources from github:
 
-    |   ``git clone https://github.com/tsathoqqua/lima.git --recurse-submodules -b stable`` (stable)
-    |   ``git clone https://github.com/tsathoqqua/lima.git --recurse-submodules`` (development)
+    |   ``git clone https://github.com/limalib/lima.git --recurse-submodules -b stable`` (stable)
+    |   ``git clone https://github.com/limalib/lima.git --recurse-submodules`` (development)
 
 .. image:: images/wsl_step5.png
   :width: 700
