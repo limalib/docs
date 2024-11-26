@@ -191,8 +191,8 @@ So, as an example, a player whispering another player in a room will be seen by 
 The players can introduce themselves to each other via the ``introduce`` verb. Either to one person in the room
 or the entire room. After being introduced, they will show up normally by name.
 
-LIMA relies heavily on a centralized parsing structure where all messages for receivers are created at once, and the 
-situations above allows the messages to be created for the sender, the other person involved, 
+LIMA relies heavily on a centralized parsing structure where all messages for receivers are created at once.
+The parsing allows the messages to be created for the sender, the other person involved, 
 and the rest of people in the room. This system is very effective, and widely used for 
 combat, emotes, verbs and  other in-room actions and is not recommended to be changed.
 
