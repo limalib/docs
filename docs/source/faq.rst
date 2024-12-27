@@ -206,7 +206,7 @@ A lot of options in config.h changed, and now bodies are broken?
 Having issues with bodies and limbs not working after changing something in ``config.h``?
 Then you can likely fix the issue, by renewing limbs and bodies for impacted players and yourself.
 
-The easiest way to do this is by using the :doc:`admtool <command/fix>` command. Examples of use:
+The easiest way to do this is by using the :doc:`fix <command/fix>` command. Examples of use:
 
    | fix me
    | fix tsath
