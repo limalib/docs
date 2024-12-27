@@ -200,3 +200,18 @@ and the rest of people in the room. This system is very effective, and widely us
 combat, emotes, verbs and  other in-room actions and is not recommended to be changed.
 
 Short version: If players want to keep their identity hidden, do not do emotes or actions.
+
+A lot of options in config.h changed, and now bodies are broken?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Having issues with bodies and limbs not working after changing something in ``config.h``?
+Then you can likely fix the issue, by renewing limbs and bodies for impacted players and yourself.
+
+The easiest way to do this is by using the :doc:`admtool <command/fix>` command. Examples of use:
+
+   | fix me
+   | fix tsath
+
+This will recreate the body and limbs for the player, and they should be back in business. As LIMA
+evolves this command will updated to fix more issues, and we rely on the community to report issues
+in case they are not fixed by the command. Do reach out to the LIMA team if you have issues that are
+not fixed by the command regarding bodies.
