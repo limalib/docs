@@ -224,7 +224,6 @@ When doing this the player will see something like:
 It is important to leave combat before doing this, as the body may bug out while in combat.
 
 .. figure:: images/fixme_output.png
-  :width: 400
   :alt: 'fix' cmd output example.
 
   Example of a body in need of fixing using the fix command.
