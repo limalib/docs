@@ -71,7 +71,7 @@ This function is similar to the ``skill_title_from_pts`` method.
 
 .. c:function:: int skill_rank(object player, string skill_name)
 
-Returns the skill rank for a player of a specific 
+Returns the skill rank for a player of a specific
 skill.
 
 

@@ -13,12 +13,12 @@ time. It's not possible to be busy with more than one thing at a time
 The action string is used for messaging like
  You begin <action> ...
  You are busy <action>!
-The function is called in the object given after busy seconds 
+The function is called in the object given after busy seconds
 (or BUSY_LENGTH if no busy given) with arguments args.
 BUSY_LENGTH is defined in /std/adversary/behaviors.
 
-This function returns 1 if the player was successfully set busy or
-0 if it failed.
+This function must return 1 if the player was successfully set busy or
+-1 if it failed. A 0 is also seen as a success.
 
 The function is the object is called and if it returns 1, everything
 is assumed well, but on 0 a message of:

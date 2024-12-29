@@ -180,7 +180,7 @@ Produces a render of the current menu.
 Renders the final frame into a string for printing.
 
 
-.. c:function:: void frame_add_column(string name, mixed *data)
+.. c:function:: varargs void frame_add_column(string name, mixed *data, function colour_function)
 
 Adds a column with a name, and an array of strings or integers to be shown.
 This can only be renderes if all contents are columns. Use ``frame_render_columns()`` to render.

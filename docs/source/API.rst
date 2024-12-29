@@ -16,6 +16,7 @@ API
 - :doc:`simul_efun: string <api/simul_efun-string>`
 - :doc:`simul_efun: tell <api/simul_efun-tell>`
 - :doc:`simul_efun: userfuncs <api/simul_efun-userfuncs>`
+- :doc:`transient: acid_arrow <api/transient-acid_arrow>`
 - :doc:`transient: shield <api/transient-shield>`
 - :doc:`user: channel <api/user-channel>`
 - :doc:`user: history <api/user-history>`

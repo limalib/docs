@@ -70,19 +70,6 @@ Parameters:
 Returns: 1 if the reflex cost was successfully spent, 0 otherwise.
 
 
-.. c:function:: void set_instant_cast(int c)
-
-Sets whether the spell is an instant cast.
-Parameters:
-- c: 1 if the spell is an instant cast, 0 otherwise.
-
-
-.. c:function:: int query_instant_cast()
-
-Returns whether the spell is an instant cast.
-Returns: 1 if the spell is an instant cast, 0 otherwise.
-
-
 .. c:function:: mixed valid_target(object target)
 
 Checks if the target is valid for the spell.
@@ -187,19 +174,40 @@ Parameters:
 - t: The cast time in seconds.
 
 
+.. c:function:: int query_cast_time()
+
+Returns the cast time of the spell.
+
+
 .. c:function:: nomask void delayed_cast_spell(object target, object sc, int success)
 
 Initiates a delayed cast for the spell.
 Parameters:
 - target: The target object.
 - sc: The spell components object.
+- success: The success level of the spell casting.
 
 
-.. c:function:: void cast_action(mixed *args)
+.. c:function:: void continue_channeling(object target, object sc)
+
+Continues the channeling of the spell.
+Parameters:
+- target: The target object.
+- sc: The spell components object.
+
+
+.. c:function:: void channel_failure(string message)
+
+Handles the failure of channeling the spell.
+Parameters:
+- message: The failure message.
+
+
+.. c:function:: int cast_action(mixed *args)
 
 Executes the casting action for the spell.
 Parameters:
-- args: An array containing the target and spell components.
+- args: An array containing the target, spell components, and success level.
 
 
 .. c:function:: object transient(string name, mixed *args...)
@@ -211,12 +219,56 @@ Parameters:
 Returns: The created transient spell object.
 
 
+.. c:function:: int test_spell()
+
+Tests if the spell is fully defined and valid.
+Returns: 1 if the spell is valid, 0 otherwise.
+
+
 .. c:function:: void internal_cast_spell(object target, object sc)
 
 Internally handles the casting of the spell.
 Parameters:
 - target: The target object.
 - sc: The spell components object.
+
+
+.. c:function:: string set_description(string d)
+
+Sets the description of the spell.
+Parameters:
+- d: The description of the spell.
+
+
+.. c:function:: string target_to_str()
+
+Converts the valid targets to a string representation.
+Returns: A comma separated string representation of the valid targets.
+
+
+.. c:function:: string cast_time_string()
+
+Converts the cast time to a string representation.
+Returns: A string representation of the cast time.
+
+
+.. c:function:: string reflex_string()
+
+Converts the reflex cost to a string representation.
+Returns: A string representation of the reflex cost.
+
+
+.. c:function:: varargs int spell_skill_rank(object target)
+
+Returns the skill rank for the spell.
+Parameters:
+- target: (optional) The target object to check the skill rank for. If not provided, defaults to this_body()
+(caster). Returns: The skill rank for the spell.
+
+
+.. c:function:: string query_description()
+
+Returns the description of the spell.
 
 
 

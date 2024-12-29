@@ -13,6 +13,7 @@ Daemons
 - :doc:`Daemon: last_login_d <daemon/daemons-last_login_d>`
 - :doc:`Daemon: lima_d <daemon/daemons-lima_d>`
 - :doc:`Daemon: method_d <daemon/daemons-method_d>`
+- :doc:`Daemon: mission_d <daemon/daemons-mission_d>`
 - :doc:`Daemon: money_d <daemon/daemons-money_d>`
 - :doc:`Daemon: party_d <daemon/daemons-party_d>`
 - :doc:`Daemon: rst_d <daemon/daemons-rst_d>`

@@ -54,6 +54,7 @@ Mudlib
 - :doc:`std: base_room <mudlib/std-base_room>`
 - :doc:`std: body <mudlib/std-body>`
 - :doc:`std: book <mudlib/std-book>`
+- :doc:`std: combat_spell <mudlib/std-combat_spell>`
 - :doc:`std: container <mudlib/std-container>`
 - :doc:`std: door <mudlib/std-door>`
 - :doc:`std: drink <mudlib/std-drink>`
@@ -62,7 +63,6 @@ Mudlib
 - :doc:`std: inf_supply <mudlib/std-inf_supply>`
 - :doc:`std: material_spawner <mudlib/std-material_spawner>`
 - :doc:`std: menu <mudlib/std-menu>`
-- :doc:`std: menu2 <mudlib/std-menu2>`
 - :doc:`std: moving_monster <mudlib/std-moving_monster>`
 - :doc:`std: moving_room <mudlib/std-moving_room>`
 - :doc:`std: non_room <mudlib/std-non_room>`
@@ -71,6 +71,7 @@ Mudlib
 - :doc:`std: slowheal <mudlib/std-slowheal>`
 - :doc:`std: spell <mudlib/std-spell>`
 - :doc:`std: transient <mudlib/std-transient>`
+- :doc:`std: transient_spell <mudlib/std-transient_spell>`
 - :doc:`wield: multiple <mudlib/wield-multiple>`
 - :doc:`wield: wield_base <mudlib/wield-wield_base>`
 

@@ -32,6 +32,7 @@ Player Commands
 - :doc:`materials <player_command/materials>`
 - :doc:`menu <player_command/menu>`
 - :doc:`metric <player_command/metric>`
+- :doc:`missions <player_command/missions>`
 - :doc:`mode <player_command/mode>`
 - :doc:`money <player_command/money>`
 - :doc:`mudlist <player_command/mudlist>`
@@ -55,6 +56,7 @@ Player Commands
 - :doc:`simplify <player_command/simplify>`
 - :doc:`skills <player_command/skills>`
 - :doc:`snoopable <player_command/snoopable>`
+- :doc:`spells <player_command/spells>`
 - :doc:`su <player_command/su>`
 - :doc:`suicide <player_command/suicide>`
 - :doc:`tell <player_command/tell>`

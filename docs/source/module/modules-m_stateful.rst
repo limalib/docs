@@ -5,6 +5,16 @@ Documentation for the modules-m_stateful module in */std/modules/m_stateful.c*.
 
 Functions
 =========
+.. c:function:: void set_owner(object ob)
+
+Set the owner of the stateful object.
+
+
+.. c:function:: object query_owner()
+
+Return the owner of the stateful object.
+
+
 .. c:function:: varargs int is_stateful(mixed extra)
 
 Override this to make the object stateful depending on what happens.

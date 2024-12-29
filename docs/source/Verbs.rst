@@ -69,6 +69,7 @@ Verbs
 - :doc:`smell <verb/smell>`
 - :doc:`smoke <verb/smoke>`
 - :doc:`stand <verb/stand>`
+- :doc:`stop <verb/stop>`
 - :doc:`swim <verb/swim>`
 - :doc:`switch <verb/switch>`
 - :doc:`talk <verb/talk>`
