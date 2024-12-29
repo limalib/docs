@@ -215,3 +215,10 @@ This will recreate the body and limbs for the player, and they should be back in
 evolves this command will updated to fix more issues, and we rely on the community to report issues
 in case they are not fixed by the command. Do reach out to the LIMA team if you have issues that are
 not fixed by the command regarding bodies.
+
+When doing this the player will see something like:
+
+   |  ``Your body is being diagnosed by Tsath. Leave combat, then stand still.``
+   |  ``Your body has been repaired. Feel any better?``
+
+It is important to leave combat before doing this, as the body may bug out while in combat.
