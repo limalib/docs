@@ -134,7 +134,6 @@ To make another person admin, add them to the admin domain using the admtool.
 They need to be a wizard already to become an admin.
 
 .. figure:: images/make_admin.png
-  :width: 400
   :alt: Make someone admin.
 
   Example of the making an existing wizard admin.
