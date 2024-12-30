@@ -30,7 +30,7 @@ in the background. To stop it later, just do ``./run stop``.
 
 Does Lima work on Windows?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
-Yes, if you use Windows Subsystem for Liux (WSL). See the :doc:`installation <installation>` for more information.
+Yes, if you use Windows Subsystem for Liux (WSL). See the :doc:`installation <Installation>` for more information.
 
 Does Lima work with other drivers ?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -62,9 +62,9 @@ you've not "broken" any critical files (eg. anything inherited by the
 user or body), which would stop the mud from booting, or stop you from logging in. Check the
 driver log should this happen in the log folder.
 
-I've broken the mud, and it won't boot. WHat do I do?
+I've broken the mud, and it won't boot. What do I do?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Restore the mud from the last backup. Use `git restore` on the file or `git diff` to see what you changed.
+Restore the mud from the last backup. Use ``git restore`` on the file or ``git diff`` to see what you changed.
 Otherwise, restore the broken file from its last backup if you do not use git.
 
 How can I learn LPC?
@@ -73,15 +73,15 @@ See the learning path tutorials here on this website. They are split into sveral
 
 How do I call functions from the command line / shell prompt?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Use the "@" command - eg "@.me->query_health()"
-Details are available in the shell help (Just type "?" from the shell prompt).
+Use the ``@`` command - eg ``@.me->query_health()``
+Details are available in the shell help (Just type ``?`` from the shell prompt).
 
-Why do `add_action()`s not work?
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Why do ``add_action()``s not work?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 The short answer:  They have deliberately been disabled, as they are far inferior to verbs, and should not be used.
 
-The longer answer: Lima does not use `add_action()` at all; it uses verbs instead.
-Absolutely nothing remotely similar to `add_action()` exists in the lib.
+The longer answer: Lima does not use ``add_action()`` at all; it uses verbs instead.
+Absolutely nothing remotely similar to ``add_action()`` exists in the lib.
 It is completely impossible for a room or object to add new commands
 to the game.
 
@@ -90,16 +90,16 @@ the same everywhere, making things much easier to understand.  Of
 course, many things may not do anything interesting; however they
 should at least give a reasonable error message.  For example, if
 there is anything in the MUD that can be twisted, it makes more sense
-for EVERYTHING to be able to be twisted, and simply do nothing,
+for *everything* to be able to be twisted, and simply do nothing,
 instead of each object which can be twisted having to completely
 reimplementing the concept.
 
-The `add_action()` way of doing things leads to lots of code
+The ``add_action()`` way of doing things leads to lots of code
 duplication, and in many cases poor parsing since the person writing
 the command is more interested in getting it to work for him than
 doing any sort of general parsing; in many cases the person in
 question is an area coder with little mudlib experience anyway.  As
-anyone who has worked extensively with `add_action()` knows, bringing
+anyone who has worked extensively with ``add_action()`` knows, bringing
 any two such objects into close proximity often results in complete
 disasters, and rarely even succeeds in generating the correct error
 message for most commands.
