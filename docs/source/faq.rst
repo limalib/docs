@@ -20,7 +20,6 @@ Initial woes
 
 I compiled the driver, what now?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 After running the ``rebuild`` script under ``adm/dist/`` you should:
    1. Edit ``config.mud`` file in same directory to adapt your settings.
    2. Edit the MUD ``name :``
@@ -29,10 +28,84 @@ After running the ``rebuild`` script under ``adm/dist/`` you should:
 That's it! Run the mud by running ``./run`` or ``./run bg`` to run the MUD in a loop
 in the background. To stop it later, just do ``./run stop``.
 
+Does Lima work on Windows?
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+Yes, if you use Windows Subsystem for Liux (WSL). See the :doc:`installation <installation>` for more information.
+
+Does Lima work with other drivers ?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+No - it was written specifically for MudOS, now FluffOS. It could be converted for other drivers (eg LDMUD or DGD),
+but that would involve a lot of work. The driver is the core of the MUD, and changing it would be a huge task.
+
+Does Lima work on OS X? (or other versions of Linux)?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+It should do. However we don't test on all versions. Report any problems compiling the driver on 
+GitHub or LIMA (limalib.dev:7878). It would be most interesting to know if it works on OS X, as it is
+a popular platform for developers.
+
+Why doesn't the mud work - says it can't find the mudlib directory?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+This usually means faulty filepaths in config.mud in the adm/dist folder.
+Usual problems are either not getting the correct absolute filepath.
+The mudlib directory should be the directory where the mudlib is located - check that it is correct
+and existing folder.
+
+Why don't my code changes have any effect?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+First, :doc:`update <command/update>`  update" the changed file, to make sure it compiles without error.
+Generally objects already in the mud will still use the "old" code,
+and only newly created objects will use the "new" code.
+Using the :doc:`renew command <command/renew>` on an old object should replace the "old" code
+with the "new" code. You may also need to use `update -R` on objects which inherit the code
+that you have changed. If all else fails, try rebooting the mud. However, make sure that
+you've not "broken" any critical files (eg. anything inherited by the
+user or body), which would stop the mud from booting, or stop you from logging in. Check the
+driver log should this happen in the log folder.
+
+I've broken the mud, and it won't boot. WHat do I do?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Restore the mud from the last backup. Use `git restore` on the file or `git diff` to see what you changed.
+Otherwise, restore the broken file from its last backup if you do not use git.
+
+How can I learn LPC?
+~~~~~~~~~~~~~~~~~~~~
+See the learning path tutorials here on this website. They are split into sveral parts with exercises.
+
+How do I call functions from the command line / shell prompt?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Use the "@" command - eg "@.me->query_health()"
+Details are available in the shell help (Just type "?" from the shell prompt).
+
+Why do `add_action()`s not work?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The short answer:  They have deliberately been disabled, as they are far inferior to verbs, and should not be used.
+
+The longer answer: Lima does not use `add_action()` at all; it uses verbs instead.
+Absolutely nothing remotely similar to `add_action()` exists in the lib.
+It is completely impossible for a room or object to add new commands
+to the game.
+
+The reason for this is consistency.  With the Lima lib, things work
+the same everywhere, making things much easier to understand.  Of
+course, many things may not do anything interesting; however they
+should at least give a reasonable error message.  For example, if
+there is anything in the MUD that can be twisted, it makes more sense
+for EVERYTHING to be able to be twisted, and simply do nothing,
+instead of each object which can be twisted having to completely
+reimplementing the concept.
+
+The `add_action()` way of doing things leads to lots of code
+duplication, and in many cases poor parsing since the person writing
+the command is more interested in getting it to work for him than
+doing any sort of general parsing; in many cases the person in
+question is an area coder with little mudlib experience anyway.  As
+anyone who has worked extensively with `add_action()` knows, bringing
+any two such objects into close proximity often results in complete
+disasters, and rarely even succeeds in generating the correct error
+message for most commands.
 
 Why is IMUD_D complaining and how to fix it?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 IMUD_D requires a valid email set in ``/include/config.h`` under:
 
 .. code-block:: c
