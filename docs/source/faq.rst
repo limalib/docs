@@ -299,3 +299,34 @@ It is important to leave combat before doing this, as the body may bug out while
   :alt: 'fix' cmd output example.
 
   Example of a body in need of fixing using the fix command.
+
+I changed one of the default colours, but it had no effect. Why?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In the colour settings in the :doc:`admtool <command/admtool>`, you can set the default colours for the MUD.
+These colours are not automatically applied to existing characters. If you change the default colours,
+you need to remove the old colour settings for the characters to get the new default colours.
+
+Your colour settings will have been set to the old default colours. To change to a new one, clear the old one.
+In the :doc:`colours command <player_command/colours>`, use the ``colours remove <whatever>`` syntax. 
+Any newly created characters will automatically start with the current default colour settings.
+
+Other topics
+------------
+
+Why is the suicide command disabled?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Because it doesn't work properly in its current form.
+The security system prevents a player command accessing secure data,
+so the deletion fails. If you want to enable it, look at how the "finger" command uses redirection
+to a command in the /trans/cmds/ directory, and daemons in the /secure/
+directory to achieve access to secure player data.
+
+How do players customise the prompt to show hit points etc?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+They don't.
+
+LIMA's health system was written to reduce processor load by only calculating halth (hit points) when required.
+If you calculate that every time a command is entered, you have wiped out most of that gain.
+The system is also modular, with options for using limb- or wound-based health,  which would probably 
+be too detailed to display in a prompt. It may be useful to add a display each round during combat, in which case
+look at ``/std/adversary/main.c`` for the main combat loop.
