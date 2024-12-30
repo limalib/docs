@@ -118,12 +118,12 @@ IMUD_D requires a valid email set in ``/include/config.h`` under:
 
 Once that has been changed, log in to your MUD, and do 
 
-   |  update \`IMUD_D\`
+   |  ``update \`IMUD_D\```
 
 and it should then load. If you are in doubt about setting ADMIN_EMAIL correctly, you can
 print it from your wizard shell like this:
 
-   |  @ADMIN_EMAIL
+   |  ``@ADMIN_EMAIL``
 
 And it will print your define.
 
@@ -165,8 +165,8 @@ This is the didlog system complaining that you need to set a new version. The di
 is a system where you and your team of wizards can log your changes and make it easier
 to cooperate. First, create a new version:
 
-    |  didlog -newversion 0.0.1
-    |  I created the first didlog for version 0.0.1! Woo!
+    |  ``didlog -newversion 0.0.1``
+    |  ``I created the first didlog for version 0.0.1! Woo!``
 
 Yes, "I" is a command, try it out, like above!
 
