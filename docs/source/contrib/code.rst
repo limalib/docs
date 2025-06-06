@@ -30,3 +30,48 @@ Technical details
 To setup your account we need to know your full name and real email address, and you need to
 send us a public ssh key. We will then create an account for you on the LIMA server, and you
 will be able to start working on the code.
+
+Using Visual Studio Code to edit server files
+=============================================
+If you are lucky enough to have access to the LIMA server, these are the guidelines to edit 
+remotely from your local PC using Visual Studio Code.
+
+   1.	Open VS Code
+   2.	Click this thing at the bottom left corner:
+
+   .. image:: ../images/vscode1.png
+
+   3.	Click connect to host
+
+   .. image:: ../images/vscode2.png
+
+   4.	Add new host, `username@limalib.dev`
+   5.	Select an SSH config file to add it to
+   6.	Click the thing from step 2 again
+   7.	Connect to `limalib.dev`
+
+      .. image:: ../images/vscode3.png
+
+   8.	New window appears, enter your SSH key (make sure to have one to protect our server!)
+
+      .. image:: ../images/vscode4.png
+
+   9.	Open folder under the File menu
+   10.	Use either `/home/lima/git/lima/` or `/home/lima/git/lima/lib/` depending on if you want driver as part of your workspace.
+
+         .. image:: ../images/vscode5.png
+
+   11.	Enter SSH key again (for some reason)
+
+         .. image:: ../images/vscode6.png
+
+   12.	File, Save workspace as in your `/home/username/` folder.
+
+         .. image:: ../images/vscode7.png
+
+
+For future times all you need to do is:
+   1.	Click the thing from step 2
+   2.	Connect to `limalib.dev`
+   3.	File, Open Workspace from file (select the file you saved under step 12)
+   4.	Done!
