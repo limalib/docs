@@ -144,10 +144,10 @@ If it doesn't work, you can manually set up the initial files:
    |   ``chown mud:mud ~mud/game/lib/secure/etc/tls/*.pem``
 
 Adjust mudlib config:
-   |   ``vi /home/mud/game/nm3.cfg``
+   |   ``nano lima/adm/dist/config.mud``
 
 Add a telnet port with TLS, pointing to the certificates from the previous step:
-   |   ``external_port_2: telnet 6667``
+   |   ``external_port_2: telnet 7890`` - or whichever port you want
    |   ``external_port_2_tls: cert=secure/etc/tls/`Server Domain Name`.crt key=`Server Domain Name`.key``
 
 More details on this at https://github.com/michaelprograms/fluffos-tutorial.
