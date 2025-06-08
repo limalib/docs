@@ -150,4 +150,4 @@ Add a telnet port with TLS, pointing to the certificates from the previous step:
    |   ``external_port_2: telnet 6667``
    |   ``external_port_2_tls: cert=secure/etc/tls/`Server Domain Name`.crt key=`Server Domain Name`.key``
 
-More details on this at https://github.com/michaelprograms/fluffos-tutorial, thanks to Diavolo and Paradox for doing this.
+More details on this at https://github.com/michaelprograms/fluffos-tutorial.
