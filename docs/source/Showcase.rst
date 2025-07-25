@@ -86,8 +86,8 @@ Or if you have a list of simple things:
    object *bodyobs = bodies();
    set_frame_title("Who");
    // Frame headers are automatic.
-   frame_add_column("Name",bodyobs->query_name();
-   frame_add_column("Level",bodyobs->query_level();
+   frame_add_column("Name",bodyobs->query_name());
+   frame_add_column("Level",bodyobs->query_level());
    out(frame_render_columns());
 
 Has creating a 'who' command ever been easier? Useful module documentation to read:
