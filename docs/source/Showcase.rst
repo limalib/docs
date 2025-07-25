@@ -90,9 +90,7 @@ Or if you have a list of simple things:
    frame_add_column("Level",bodyobs->query_level();
    out(frame_render_columns());
 
-Has creating a 'who' command ever been easier?
-
-Useful module documentation to read:
+Has creating a 'who' command ever been easier? Useful module documentation to read:
 
 - :doc:`Module: m_frame <module/modules-m_frame>`
 - :doc:`Module: m_widgets <module/modules-m_widgets>`
