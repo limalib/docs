@@ -15,10 +15,66 @@ pathname match correctly, since:
 cannonical_form("foo/bar") == cannonical_form("/foo/bar.c")
 
 
+.. c:function:: int path_exists(string x)
+
+Returns true if the path exists, false otherwise.
+
+
+.. c:function:: int is_directory(string x)
+
+Returns true if the path is a directory, false otherwise.
+
+
+.. c:function:: int is_file(string x)
+
+Returns true if the path is a file, false otherwise.
+
+
+.. c:function:: string *split_path(string p)
+
+Given a path, returns an array of two strings, the first being the
+directory part of the path, and the second being the file part.
+
+
+.. c:function:: string base_path(string p)
+
+Given a path, returns the directory part of the path.
+
+
+.. c:function:: string depath(string p)
+
+Given a path, returns the file part of the path.
+
+
+.. c:function:: varargs void walk_dir(string path, function func, mixed arg)
+
+Walks a directory tree, calling a function for each directory it finds.
+
+
 .. c:function:: string canonical_path(string path)
 
 Strip out all "." and ".." forms from a path.  Remove double slashes.
 Ensure the path has a leading slash.
+
+
+.. c:function:: string join_path(string dir, string file)
+
+Given a directory and a file, return the full path.
+
+
+.. c:function:: mapping map_paths(mixed paths)
+
+Given an array of paths, return a mapping of the form ([dir: ({files})]).
+
+
+.. c:function:: varargs string absolute_path(string relative_path, mixed relative_to)
+
+Given a relative path and an object, return the absolute path.
+
+
+.. c:function:: nomask string wiz_dir(mixed what)
+
+Given a wizard name or object, return the wizard's directory.
 
 
 

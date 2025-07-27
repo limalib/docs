@@ -63,6 +63,7 @@ Mudlib
 - :doc:`std: inf_supply <mudlib/std-inf_supply>`
 - :doc:`std: material_spawner <mudlib/std-material_spawner>`
 - :doc:`std: menu <mudlib/std-menu>`
+- :doc:`std: menu_old <mudlib/std-menu_old>`
 - :doc:`std: moving_monster <mudlib/std-moving_monster>`
 - :doc:`std: moving_room <mudlib/std-moving_room>`
 - :doc:`std: non_room <mudlib/std-non_room>`

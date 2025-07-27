@@ -8,6 +8,7 @@ Daemons
 - :doc:`Daemon: damage_d <daemon/daemons-damage_d>`
 - :doc:`Daemon: emoji_d <daemon/daemons-emoji_d>`
 - :doc:`Daemon: event_d <daemon/daemons-event_d>`
+- :doc:`Daemon: git_d <daemon/daemons-git_d>`
 - :doc:`Daemon: group_d <daemon/daemons-group_d>`
 - :doc:`Daemon: guild_d <daemon/daemons-guild_d>`
 - :doc:`Daemon: last_login_d <daemon/daemons-last_login_d>`

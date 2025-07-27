@@ -180,11 +180,12 @@ Produces a render of the current menu.
 Renders the final frame into a string for printing.
 
 
-.. c:function:: varargs void frame_add_column(string name, mixed *data, function colour_function)
+.. c:function:: varargs void frame_add_column(string name, mixed *data, function colour_function, int max_width)
 
 Adds a column with a name, and an array of strings or integers to be shown.
-This can only be renderes if all contents are columns. Use ``frame_render_columns()`` to render.
+This can only be rendered if all contents are columns. Use ``frame_render_columns()`` to render.
 Call ``frame_init_user()`` before adding columns.
+If max_width is not specified, it will be calculated based on the longest string in the column.
 Important: Frame header and frame content should
 not be called as they are calculated automatically.
 

@@ -12,10 +12,14 @@ you what muds match the pattern.
 
 Examples:
 
-  |  ``mudlist``	- get all muds
+  |  ``mudlist``	   - get all muds
+  |  ``mudlist -a``	- get all muds, including those that are not up
   |  ``mudlist mud``	- get all muds that contain "mud" somewhere
 	  |	                 in their name
   |  ``mudlist ^foo``	-- get all muds whose name starts with "foo"
+
+Wizards receive extra information about the muds, such as the library
+and driver versions, and the administrator of the mud.
 
 .. TAGS: RST
 
