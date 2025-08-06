@@ -5,6 +5,12 @@ Documentation for the adversary-target functions for the mudlib in */std/adversa
 
 Functions
 =========
+.. c:function:: int is_attacking_me(object ob)
+
+Check if the object is attacking us
+Returns 1 if the object is attacking us, 0 otherwise.
+
+
 .. c:function:: object get_target()
 
 Get someone to attack from our attackers list

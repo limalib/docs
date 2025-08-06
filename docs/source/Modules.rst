@@ -23,6 +23,7 @@ Module
 - :doc:`Module: m_drink_container <module/modules-m_drink_container>`
 - :doc:`Module: m_drink_source <module/modules-m_drink_source>`
 - :doc:`Module: m_drinkable <module/modules-m_drinkable>`
+- :doc:`Module: m_durability <module/modules-m_durability>`
 - :doc:`Module: m_edible <module/modules-m_edible>`
 - :doc:`Module: m_exit <module/modules-m_exit>`
 - :doc:`Module: m_fluid_container <module/modules-m_fluid_container>`

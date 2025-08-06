@@ -132,12 +132,12 @@ in config.h.
 Shortens a filename by introducing ^ as /domains/ and ~ as /wiz/.
 
 
-.. c:function:: varargs string object_name(mixed ob, int no_instance)
+.. c:function:: varargs string obname(mixed ob, int no_instance)
 
 Returns the object name without the path.
 Example:
-   object_name(.me)   -> "coder#5453"
-   object_name(.me,1) -> "coder"
+   obname(.me)   -> "coder#5453"
+   obname(.me,1) -> "coder"
 
 
 .. c:function:: string filename_ellipsis(string fpath, int max)

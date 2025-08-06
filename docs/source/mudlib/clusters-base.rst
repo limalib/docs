@@ -5,7 +5,13 @@ Documentation for the clusters-base functions for the mudlib in */std/behaviour/
 
 Functions
 =========
-.. c:function:: void mod_emotion(mixed emotion, int mod)
+.. c:function:: void neutralize_emotion(int emotion)
+
+Neutralize an emotion by one point. This is useful for
+calming down an NPC.
+
+
+.. c:function:: void mod_emotion(int emotion, int mod)
 
 Function for modifying the behavior of the brainee.
 Examples::
@@ -16,7 +22,7 @@ Are valid examples. Emotion names can be abbreviated to first 3 letters, or you
 can use integers as per defined in behaviour.h.
 
 
-.. c:function:: void set_emotion(mixed emotion, int value)
+.. c:function:: void set_emotion(int emotion, int value)
 
 Function for setting a specific emotion. This sets the emotion to this value and doesn't raise it above
 the given value.

@@ -5,6 +5,7 @@ Daemons
 .. TAGS: RST
 - :doc:`Daemon: account_d <daemon/daemons-account_d>`
 - :doc:`Daemon: channel_d <daemon/daemons-channel_d>`
+- :doc:`Daemon: clan_d <daemon/daemons-clan_d>`
 - :doc:`Daemon: damage_d <daemon/daemons-damage_d>`
 - :doc:`Daemon: emoji_d <daemon/daemons-emoji_d>`
 - :doc:`Daemon: event_d <daemon/daemons-event_d>`
