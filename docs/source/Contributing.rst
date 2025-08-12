@@ -11,7 +11,7 @@ You can contribute in a multitude of ways:
   to manage the development of the mudlib at `GitHub projects <https://github.com/orgs/limalib/projects/1>`_.
 * **Documentation** - You can contribute to the documentation. The documentation is 
   written in reStructuredText and in the `Sphinx <https://www.sphinx-doc.org/en/master/>`_ format 
-  and is available at https://docs.limalib.dev/. It is partly generated from the mudlib code.
+  and is available at https://docs.limamudlib.dev/. It is partly generated from the mudlib code.
 * **Bug Reports** - You can report bugs in the mudlib or the documentation, they can be
   reported at `LIMA GitHub issues <https://github.com/limalib/lima/issues>`_ for the mudlib and
   at `Docs GitHub issues <https://github.com/limalib/docs/issues>`_ for the documentation.

@@ -14,7 +14,7 @@ If you want to contribute code to LIMA, you can do so by following these steps:
 Contributing as part of the LIMA team
 =====================================
 As a member of the core LIMA team, you will be given access to the GitHub projects and the
-LIMA server at limalib.dev 7878. This is "old style" MUD development, where we all contribute
+LIMA server at limamudlib.dev 7878. This is "old style" MUD development, where we all contribute
 code and changes to the same codebase. This is a great way to learn how to work with others.
 
 We use the our own internal Discord for discussions and meetings. You will receive an invite 
@@ -45,10 +45,10 @@ remotely from your local PC using Visual Studio Code.
 
    .. image:: ../images/vscode2.png
 
-   4.	Add new host, `username@limalib.dev`
+   4.	Add new host, `username@limamudlib.dev`
    5.	Select an SSH config file to add it to
    6.	Click the thing from step 2 again
-   7.	Connect to `limalib.dev`
+   7.	Connect to `limamudlib.dev`
 
       .. image:: ../images/vscode3.png
 
@@ -72,6 +72,6 @@ remotely from your local PC using Visual Studio Code.
 
 For future times all you need to do is:
    1.	Click the thing from step 2
-   2.	Connect to `limalib.dev`
+   2.	Connect to `limamudlib.dev`
    3.	File, Open Workspace from file (select the file you saved under step 12)
    4.	Done!

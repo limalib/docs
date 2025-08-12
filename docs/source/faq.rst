@@ -40,7 +40,7 @@ but that would involve a lot of work. The driver is the core of the MUD, and cha
 Does Lima work on OS X? (or other versions of Linux)?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 It should do. However we don't test on all versions. Report any problems compiling the driver on 
-GitHub or LIMA (limalib.dev:7878). It would be most interesting to know if it works on OS X, as it is
+GitHub or LIMA (limamudlib.dev:7878). It would be most interesting to know if it works on OS X, as it is
 a popular platform for developers.
 
 Why doesn't the mud work - says it can't find the mudlib directory?
