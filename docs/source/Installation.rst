@@ -41,15 +41,24 @@ Windows Subsystem for Linux (WSL)
 
     |   ``sudo apt update``
 
-Then install prerequisites for Ubuntu:
+Then install prerequisites for Ubuntu 24:
 
     |   ``sudo apt install build-essential bison libmysqlclient-dev libpcre3-dev libpq-dev libsqlite3-dev libssl-dev libz-dev libjemalloc-dev libicu-dev cmake git``
 
+or for Ubuntu 26:
+
+    |   ``sudo apt install build-essential bison libmysqlclient-dev libffi-dev libpq-dev libsqlite3-dev libssl-dev zlib1g-dev libjemalloc-dev libicu-dev cmake git``
+
 or for Debian:
 
-    |   ``sudo apt install build-essential bison libmariadb-dev libmariadb-dev-compat libpcre3-dev libpq-dev libsqlite3-dev libssl-dev zlib1g-dev libjemalloc-dev libicu-dev cmake git``
+    |   ``sudo apt install build-essential bison libmariadb-dev libmariadb-dev-compat libffi-dev libpq-dev libsqlite3-dev libssl-dev zlib1g-dev libjemalloc-dev libicu-dev cmake git``
 
-(These packages are prone to change, so modify as needed - it is not possible to keep chasing changes in versions and package names)
+These packages are prone to change, so modify as needed - it is not possible to keep chasing changes in versions and package names.
+
+.. note::
+   The pcre package is needed for LIMA and to compile the driver. It disappeared from Debian and Ubuntu, but the rebuild script (see below),
+   will pull a pcre package and build it so the driver build succeeds. On Ubuntu 24, you can use libpcre3-dev instead - make sure to install
+   it before running rebuild.
 
 .. image:: images/wsl_step3.png
   :width: 700
